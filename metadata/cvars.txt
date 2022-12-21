@@ -1,0 +1,5 @@
+log.filter_subsystems=HTTPServer
+
+# renderer.fullscreen=true
+
+# renderer.background_sleep=0
