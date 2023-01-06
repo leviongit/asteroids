@@ -13,7 +13,12 @@ class Player < Polygon
 
   def accel
     rangle = @angle * 0.01745329251994329577
-    @vel.add!(Vec2.from_polar(1, rangle))
+    @vel.add!(Vec2.from_polar(0.5, rangle))
+  end
+
+  def slow
+    rangle = @angle * 0.01745329251994329577
+    @vel.sub!(Vec2.from_polar(0.5, rangle))
   end
 
   def rotate_deg!(degrees)
